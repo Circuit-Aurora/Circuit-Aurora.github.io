@@ -63,13 +63,13 @@ preconnect:
   - https://cdn.jsdelivr.net
 
 social:
-  - name: RSS
+  - name: RSS订阅
     # set rss in your root config
     # https://github.com/hexojs/hexo-generator-feed
     link: /atom.xml # config.feed.path
     icon: icon-rss-line
     color: orange
-  - name: QQ
+  - name: QQ粉丝群
     link: https://jq.qq.com/?_wv=1027&k=h7WGJNgY/
     icon: icon-qq-line
     color: "#12B7F5"
@@ -77,7 +77,7 @@ social:
     link: https://github.com/Circuit-Aurora/
     icon: icon-github-line
     color: "#181717"
-  - name: E-Mail
+  - name: 邮箱
     link: mailto:3045982188@qq.com
     icon: icon-mail-line
     color: "#8E71C1"
@@ -93,7 +93,7 @@ social:
     link: https://space.bilibili.com/482254297/
     icon: icon-bilibili-line
     color: "#FF8EB3"
-  - name: Travelling
+  - name: 友链接力
     link: https://travellings.now.sh/
     icon: icon-send-plane-2-line
     color: black
@@ -221,10 +221,6 @@ toc:
   placeholder: 很遗憾，咱没写啥目录
   collapse: true
 
-post_edit:
-  enable: true
-  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
-
 codeblock:
   copy_btn: true
   prismjs:
@@ -246,11 +242,11 @@ reward:
   comment: 求赞助嘤嘤嘤
   methods:
     - name: 支付宝
-      path: /images/alipay-qrcore.jpg
+      path: https://cdn.jsdelivr.net/gh/Circuit-Aurora/Circuit-Aurora.github.io/images/alipay-qrcode.jpg
       color: "#00A3EE"
       icon: icon-alipay-line
     - name: QQ 支付
-      path: /image/qqpay-qrcode.png
+      path: https://cdn.jsdelivr.net/gh/Circuit-Aurora/Circuit-Aurora.github.io/images/qqpay-qrcode.png
       color: "#12B7F5"
       icon: icon-qq-line
 
@@ -295,23 +291,33 @@ girls:
 albums:
   enable: true
 
-comment:
+github_issues:
   enable: true
-  tips:
-    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
-    - 若没有本文 Issue，您可以使用 Comment 模版新建。
-  candidates:
-    - valine
-    - utterances
+  username: Circuit-Aurora
+  repository: Circuit-Aurora.github.io
+  filters: is:issue
+
+github_discussions:
+  enable: true
+  username: Circuit-Aurora
+  repository: Circuit-Aurora.github.io
 
 waline:
   enable: true
-  serverURL: https://example.com/ #等待加入awa
+  el: true
+  serverURL: https://waline-dusky.vercel.app/
+  placeholder: 说些什么awa...
+  path: window.location.pathname
+  avatar: ''
+  meta: ['游客']
+  pageSize: 5
+  lang: zh-CN
   visitor: true
-  comment: true
+  highlight: true
   avatarCDN: https://cdn.v2ex.com/gravatar/
-  placeholder: 填写邮箱，可以收到回复通知哦～
-  requiredFields: ["Guest"]
+  avatarForce: true
+  requiredFields: ['Guest']
+  uploadImage: true
 
 engine_search:
   enable: false
@@ -324,11 +330,11 @@ local_search:
   src: /js/search/local-search.js
 
 leancloud_visitors:
-  enable: false
-  app_id: # <your app id>
-  app_key: # <your app key>
+  enable: true
+  app_id: PlsghzOp2Vp8Tdf7P6OH3fK9-MdYXbMMI
+  app_key: 21uIcuHEVBu52OYppx3OOVCg
   # Required for apps from CN region
-  server_url: # <your server url>
+  server_url: https://circuit-aurora.github.io/
 
 google_adsense:
   enable: false

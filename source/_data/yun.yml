@@ -1,0 +1,341 @@
+mode: auto
+favicon: /images/avatar.ico
+icon: ion-icon heart
+
+avatar:
+  enable: true
+  url: /images/avatar.png
+  rounded: true
+  opacity: 1
+  mickey_mouse: true
+  status:
+    enable: true
+    emoji: φ
+    message: 嘤嘤嘤
+
+head:
+  css:
+    fonts: http://hellofonts.oss-cn-beijing.aliyuncs.com/%E6%B1%89%E4%BB%AA%E6%96%87%E9%BB%91/5.00/HYWenHei-85W.ttf
+    aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css
+    stylesheet: https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
+  js:
+    defer:
+      aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
+      loadAplayer: /js/load-aplayer.js
+      autoload: https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js
+      live2d.min.js: https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js
+
+tags:
+  C++: "#87CEEB"
+  Python: "#FFFF00"
+  HTML: "#FFA500"
+  Java: "#FF00FF"
+
+categories:
+  编程时光: "#00FFFF"
+  日常闲谈: "#9370DB"
+
+#cdn:
+#  pre: ""
+#  css:
+#  js:
+#    base:
+#    async:
+#      # 这里是你从 iconfont 处获得的图标链接。
+#      iconfont: //at.alicdn.com/t/font_1140697_stqaphw3j4.js
+#    defer:
+
+preload:
+  style:
+    - /css/hexo-theme-yun.css
+  script:
+    - /js/utils.js
+    - /js/hexo-theme-yun.js
+
+prefetch:
+  script:
+    - /js/sidebar.js
+
+dns_prefetch:
+  - https://cos.yunyoujun.cn
+
+preconnect:
+  - https://cdn.jsdelivr.net
+
+social:
+  - name: RSS
+    # set rss in your root config
+    # https://github.com/hexojs/hexo-generator-feed
+    link: /atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  - name: QQ
+    link: https://jq.qq.com/?_wv=1027&k=h7WGJNgY/
+    icon: icon-qq-line
+    color: "#12B7F5"
+  - name: GitHub
+    link: https://github.com/Circuit-Aurora/
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:3045982188@qq.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=2136125308/
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  - name: 知乎
+    link: https://www.zhihu.com/people/Circuit-Aurora/
+    icon: icon-zhihu-line
+    color: "#0084FF"
+  - name: 哔哩哔哩
+    link: https://space.bilibili.com/482254297/
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: Travelling
+    link: https://travellings.now.sh/
+    icon: icon-send-plane-2-line
+    color: black
+
+banner:
+  enable: true
+  title: 
+    - Circuit
+    - Aurora
+    - の
+    - 小站
+  src: /js/ui/banner.js
+  border: true
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+notice:
+  enable: true
+  content: 感谢参观我的博客awa
+
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  opacity: 0.8
+
+search:
+  modal: true
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+
+fireworks:
+  enable: true
+  colors:
+    - "102, 167, 221"
+    - "62, 131, 225"
+    - "33, 78, 194"
+
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .post-content img
+
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+
+sidebar:
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_position: bottom 3rem center
+  tagcloud:
+    enable: false
+    amount: 20
+
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+
+pages:
+  - name: 友情链接
+    url: /links/
+    icon: icon-men-line
+    color: dodgerblue
+  - name: 我的老婆们
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
+
+post_card:
+  opacity: 0.8
+
+types:
+  link:
+    color: blue
+    icon: icon-external-link-line
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  github:
+    color: black
+    icon: icon-github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: icon-netease-cloud-music-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
+
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: 很遗憾，咱没写啥目录
+  collapse: true
+
+post_edit:
+  enable: true
+  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
+
+codeblock:
+  copy_btn: true
+  prismjs:
+    light: default
+    dark: tomorrow
+
+creative_commons:
+  license: by-nc-sa
+  post: true
+  language: deed.zh
+  clipboard: true
+
+lazyload:
+  enable: true
+
+reward:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: 求赞助嘤嘤嘤
+  methods:
+    - name: 支付宝
+      path: /images/alipay-qrcore.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: QQ 支付
+      path: /image/qqpay-qrcode.png
+      color: "#12B7F5"
+      icon: icon-qq-line
+
+footer:
+  since: 2021
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
+  powered:
+    enable: true
+  beian:
+    enable: false
+    icp: 
+  live_time:
+    enable: true
+    prefix: 本博客已运行
+    suffix: (●'◡'●)
+    start_time: "2021-01-01T00:00:00"
+  custom_text: Powered by Circuit-Aurora
+
+say:
+  enable: true
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  src: /js/say.js
+  hitokoto:
+    enable: true
+    api: https://v1.hitokoto.cn
+
+mourn:
+  enable: true
+  days:
+    - "4-4"
+    - "12-13"
+
+wordcloud:
+  enable: true
+
+girls:
+  enable: true
+
+albums:
+  enable: true
+
+comment:
+  enable: true
+  tips:
+    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  candidates:
+    - valine
+    - utterances
+
+waline:
+  enable: true
+  serverURL: https://example.com/ #等待加入awa
+  visitor: true
+  comment: true
+  avatarCDN: https://cdn.v2ex.com/gravatar/
+  placeholder: 填写邮箱，可以收到回复通知哦～
+  requiredFields: ["Guest"]
+
+engine_search:
+  enable: false
+  href: "https://www.bing.com/search?q=site:"
+  # href: "https://www.baidu.com/s?wd=site:"
+  domain: yunyoujun.cn
+
+local_search:
+  enable: true
+  src: /js/search/local-search.js
+
+leancloud_visitors:
+  enable: false
+  app_id: # <your app id>
+  app_key: # <your app key>
+  # Required for apps from CN region
+  server_url: # <your server url>
+
+google_adsense:
+  enable: false
+  #Go to https://www.google.com/adsense to view client id
+  client: XXXXXXXXXXXXXXXX
+
+wordcount:
+  enable: true
+  count: true
+  time: true
